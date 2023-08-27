@@ -1,0 +1,40 @@
+
+This Python script generates a QR code using the `qrcode` library. The QR code encodes a specified URL and saves the generated QR code as an image file.
+
+Usage
+-----
+1. Ensure you have Python and the `qrcode` library installed.
+2. Run the script. It will generate a QR code for the specified URL and save it as "MyLinkdin.png" in the same directory.
+
+Code Overview
+-------------
+1. Import necessary libraries:
+   - `qrcode`: A library for generating QR codes.
+
+2. Generate a QR code:
+   - Use `qr.make()` to generate a QR code. Provide the URL you want to encode as a parameter.
+   - The generated QR code is stored in the `img` variable.
+
+3. Save the QR code as an image:
+   - Use the `img.save()` method to save the generated QR code as an image file.
+   - The image file is saved with the filename "MyLinkdin.png".
+
+Components
+----------
+- `img`: The generated QR code stored as an image.
+
+Functionality
+-------------
+The script generates a QR code containing the URL "https://www.linkedin.com/in/shivam-rawat-249316197/" and saves it as "MyLinkdin.png". When the script is executed, the QR code image file will be created in the same directory.
+
+License
+-------
+This script is provided without any warranty. You are free to use and modify it for personal or educational purposes.
+
+Author
+------
+[Shivam Rawat]
+
+Date
+----
+[27-08-2023]

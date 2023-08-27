@@ -1,0 +1,51 @@
+
+This Python script generates a customized QR code using the `qrcode` library and the `PIL` (Pillow) library for image manipulation. The script encodes a specified URL, applies custom settings to the QR code, and saves the generated QR code as an image file.
+
+Usage
+-----
+1. Ensure you have Python, the `qrcode` library, and the `PIL` (Pillow) library installed.
+2. Run the script. It will generate a customized QR code for the specified URL and save it as "MyGithub.png" in the same directory.
+
+Code Overview
+-------------
+1. Import necessary libraries:
+   - `qrcode`: A library for generating QR codes.
+   - `Image` from `PIL`: A module from the Pillow library for image manipulation.
+
+2. Configure the QR code generation:
+   - Create a `QRCode` object with custom settings:
+     - `version=1`: QR code version (size) 1.
+     - `error_correction=qrcode.constants.ERROR_CORRECT_H`: Error correction level (high).
+     - `box_size=10`: Size of each box (module) in the QR code.
+     - `border=4`: Border size around the QR code.
+
+3. Add data to the QR code:
+   - Use the `add_data()` method to add the URL "https://github.com/ShivamRawat75" to the QR code.
+
+4. Generate the QR code:
+   - Call `make(fit=True)` to generate the QR code image.
+
+5. Customize the QR code appearance:
+   - Create an image using the `make_image()` method with specified fill and background colors.
+   - Save the generated image as "MyGithub.png".
+
+Components
+----------
+- `qr`: A `QRCode` object with custom settings for QR code generation.
+- `img`: The generated QR code image with custom appearance.
+
+Functionality
+-------------
+The script generates a customized QR code containing the URL "https://github.com/ShivamRawat75". The QR code is generated with custom settings for version, error correction, box size, and border size. The image is customized with a specific fill color and background color. When the script is executed, the customized QR code image file will be created in the same directory.
+
+License
+-------
+This script is provided without any warranty. You are free to use and modify it for personal or educational purposes.
+
+Author
+------
+[Shivam Rawat]
+
+Date
+----
+[27-08-2023]
